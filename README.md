@@ -25,3 +25,14 @@ npm install
 
 ```
 ### Escolha a opção: React (JavaScript)
+
+
+```
+npm install primereact primeicons primeflex
+
+```
+- primereact → Componentes
+
+- primeicons → Conjunto de ícones
+
+- primeflex → Classes utilitárias (ex: flex, justify-content-center)
