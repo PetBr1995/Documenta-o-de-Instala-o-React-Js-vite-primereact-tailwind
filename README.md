@@ -40,5 +40,5 @@ npm install primereact primeicons primeflex
 - primeflex → Classes utilitárias (ex: flex, justify-content-center)
 
   #### Links para documentação primereact
-  [Primereact](https://primereact.org/)
+  [Primereact](https://primereact.org/)_
   [Primeflex](https://primeflex.org/)
