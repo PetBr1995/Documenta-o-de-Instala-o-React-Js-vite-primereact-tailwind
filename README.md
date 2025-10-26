@@ -27,7 +27,7 @@ npm install
 ### Escolha a opção: React (JavaScript)
 
 ---
-## Instalação do Primereact
+## 🌟 Instalação do PrimeReact
 
 ```
 npm install primereact primeicons primeflex
@@ -46,7 +46,7 @@ npm install primereact primeicons primeflex
 
   ---
 
-  ## Instalação do Tailwind (v3 recomendado)
+  ## 🎨 Instalação do Tailwind (v3 recomendado)
 
   ### Remova qualquer versão anterior
   ```
@@ -84,10 +84,54 @@ npm install primereact primeicons primeflex
   ```javascript
   export default {
   plugins: {
-    tailwindcss: {},
-    autoprefixer: {},
-  },
-};
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  };
+  ```
+
+  ---
+
+  ## 📁 Criar / Ajustar src/index.css
+
+  ```css
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+  ```
+
+  ---
+
+  ## 🧩 Importações corretas no App.jsx
+  **A ordem importa!**
+  **PrimeReact → PrimeFlex → Tailwind**
+  
+  ```javascript
+  
+    // Estilos do PrimeReact
+  import "primereact/resources/themes/lara-light-blue/theme.css";
+  import "primereact/resources/primereact.min.css";
+  import "primeicons/primeicons.css";
+
+  // PrimeFlex (antes do Tailwind)
+  import "primeflex/primeflex.css";
+
+  // Tailwind (por último)
+  import "./index.css";
+
+  import { PrimeReactProvider } from "primereact/api";
+  import Home from "./pages/Home/Home";
+
+  function App() {
+    return (
+      <PrimeReactProvider>
+        <Home />
+      </PrimeReactProvider>
+    );
+  }
+
+export default App;
+
   ```
 
     
