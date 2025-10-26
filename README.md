@@ -65,7 +65,7 @@ npm install primereact primeicons primeflex
   tailwind.config.js
   postcss.config.js
   ```
-
+  #### ⚙️ Configuração do tailwind.config.js
   ```javascript
    /** @type {import('tailwindcss').Config} */
     export default {
