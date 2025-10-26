@@ -43,3 +43,42 @@ npm install primereact primeicons primeflex
   
   [Primereact](https://primereact.org/)
   [Primeflex](https://primeflex.org/)
+
+  ---
+
+  ## Instalação do Tailwind (v3 recomendado)
+
+  ### Remova qualquer versão anterior
+  ```
+    npm uninstall tailwindcss
+
+  ```
+  ### Instale 
+  ```
+  npm install -D tailwindcss@3 postcss autoprefixer
+  npx tailwindcss init -p
+
+  ```
+  ### Serão gerados dois arquivos
+
+  ```
+  tailwind.config.js
+  postcss.config.js
+  ```
+
+  ```javascript
+   /** @type {import('tailwindcss').Config} */
+    export default {
+    content: [
+        "./index.html",
+        "./src/**/*.{js,jsx,ts,tsx}"
+      ],
+      theme: {
+        extend: {},
+      },
+      plugins: [],
+    }
+
+  ```
+
+    
