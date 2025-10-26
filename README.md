@@ -26,6 +26,8 @@ npm install
 ```
 ### Escolha a opção: React (JavaScript)
 
+---
+## Instalação do Primereact
 
 ```
 npm install primereact primeicons primeflex
