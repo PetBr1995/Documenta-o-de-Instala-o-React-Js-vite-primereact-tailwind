@@ -41,5 +41,5 @@ npm install primereact primeicons primeflex
 
   #### Links para documentação primereact
   
-  [Primereact](https://primereact.org/)␣
+  [Primereact](https://primereact.org/)
   [Primeflex](https://primeflex.org/)
