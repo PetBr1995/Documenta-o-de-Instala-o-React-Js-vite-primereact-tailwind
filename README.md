@@ -130,8 +130,57 @@ npm install primereact primeicons primeflex
     );
   }
 
-export default App;
+  export default App;
 
   ```
+## ✅ Teste — Criar arquivo src/pages/Home/Home.jsx
 
+```javascript
+export default function Home() {
+  return (
+    <div className="card flex justify-content-center align-items-center gap-4 h-64 border border-gray-300">
+      <div className="bg-blue-500 text-white px-4 py-2 rounded">Tailwind</div>
+      <div className="bg-orange-500 text-white px-4 py-2 rounded">PrimeFlex</div>
+    </div>
+  );
+}
+
+```
     
+## ▶️ Executar o Projeto
+
+```
+npm run dev
+
+```
+
+## ⚠️VS Code — Alertas como Unknown at rule @tailwind
+Instale a extensão:  
+```
+Tailwind CSS IntelliSense
+```
+Opcional: adicionar no settings.json
+```json
+{
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "css.lint.unknownAtRules": "ignore"
+}
+
+```
+## 🆕 Usando Tailwind 4+ (se desejar futuramente)
+
+Tailwind 4 separou o CLI e o comando mudou.
+
+Instalar o CLI:
+```bash
+npm install -D @tailwindcss/cli
+
+```
+Rodar build/watch:
+```bash
+npx @tailwindcss/cli -i ./src/index.css -o ./dist/output.css --watch
+
+```
+[Documentação:](https://tailwindcss.com/docs/installation/tailwind-cli)
